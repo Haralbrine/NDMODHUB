@@ -98,7 +98,7 @@ if ($currentModId) {
 </head>
 <body>
     <header>
-        <h1><a href="index.php">ND MOD HUB</a></h1>
+        <h1><a href="index.html">ND MOD HUB</a></h1>
         <p>Custom levels, audio, and video packages for Narbacular Drop</p>
     </header>
 
@@ -108,7 +108,7 @@ if ($currentModId) {
         <?php endif; ?>
 
         <?php if ($activeMod): ?>
-            <a href="index.php" class="back-link">&larr; Back to all mods</a>
+            <a href="index.html" class="back-link">&larr; Back to all mods</a>
             <div class="card">
                 <h2><?php echo htmlspecialchars($activeMod['name']); ?></h2>
                 <p>By <strong><?php echo htmlspecialchars($activeMod['author']); ?></strong></p>
@@ -126,7 +126,7 @@ if ($currentModId) {
         <?php else: ?>
             <div class="upload-box">
                 <h3>Upload a New Mod</h3>
-                <form action="index.php" method="POST" enctype="multipart/form-data">
+                <form action="index.html" method="POST" enctype="multipart/form-data">
                     <label>Mod Name:</label>
                     <input type="text" name="name" required placeholder="e.g. My Custom Levels">
                     
